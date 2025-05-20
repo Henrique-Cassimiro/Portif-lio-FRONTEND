@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Google Clone</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #202124;
+      color: white;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .top-right {
+      position: absolute;
+      top: 15px;
+      right: 30px;
+      display: flex;
+      gap: 20px;
+      font-size: 14px;
+    }
+
+    .google-logo {
+      font-size: 80px;
+      font-weight: bold;
+      color: white;
+      font-family: 'Product Sans', Arial, sans-serif;
+      margin-bottom: 30px;
+    }
+
+    .search-box {
+      display: flex;
+      align-items: center;
+      background-color: #303134;
+      border: 1px solid #5f6368;
+      border-radius: 24px;
+      padding: 10px 20px;
+      width: 600px;
+      max-width: 90%;
+    }
+
+    .search-box input {
+      background: none;
+      border: none;
+      outline: none;
+      color: white;
+      font-size: 16px;
+      width: 100%;
+    }
+
+    .buttons {
+      margin-top: 30px;
+      display: flex;
+      gap: 10px;
+    }
+
+    .buttons button {
+      background-color: #303134;
+      color: white;
+      border: 1px solid #5f6368;
+      border-radius: 4px;
+      padding: 10px 20px;
+      cursor: pointer;
+    }
+
+    .buttons button:hover {
+      background-color: #3c4043;
+    }
+
+    .highlight {
+      margin-top: 20px;
+      font-size: 13px;
+      color: #bdc1c6;
+    }
+
+    .highlight span {
+      color: red;
+      font-weight: bold;
+    }
+
+    .highlight a {
+      color: #8ab4f8;
+      text-decoration: none;
+    }
+
+    .highlight a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="top-right">
+    <a href="#" style="color:white;">Gmail</a>
+    <a href="#" style="color:white;">Imagens</a>
+    <div style="background: #5f6368; border-radius: 50%; width: 30px; height: 30px; display: flex; align-items: center; justify-content: center; font-weight: bold;">H</div>
+  </div>
+
+  <div class="google-logo">Google</div>
+
+  <div class="search-box">
+    <input type="text" placeholder="Pesquisar no Google ou digite uma URL">
+  </div>
+
+  <div class="buttons">
+    <button>Pesquisa Google</button>
+    <button>Estou com sorte</button>
+  </div>
+
+  <div class="highlight">
+    <span>Assista agora!</span> Descubra nossas inovações mais recentes em IA no <a href="#">Google I/O 2025</a>
+  </div>
+
+</body>
+</html>
