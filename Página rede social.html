@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Facebook Clone</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f2f5;
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px;
+    }
+
+    /* Sidebar */
+    .sidebar {
+      width: 20%;
+      padding: 10px;
+    }
+
+    .sidebar ul {
+      list-style: none;
+    }
+
+    .sidebar li {
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      cursor: pointer;
+    }
+
+    .sidebar li:hover {
+      background-color: #e4e6eb;
+      border-radius: 8px;
+    }
+
+    /* Feed */
+    .feed {
+      width: 50%;
+    }
+
+    .stories {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    .story {
+      width: 100px;
+      height: 150px;
+      border-radius: 10px;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .post-box {
+      background-color: white;
+      padding: 10px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+
+    .post {
+      background-color: white;
+      border-radius: 8px;
+      padding: 10px;
+      margin-bottom: 20px;
+    }
+
+    .post img.post-img {
+      width: 100%;
+      border-radius: 8px;
+      margin-top: 10px;
+    }
+
+    .post-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 5px;
+    }
+
+    .post-header img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+    }
+
+    /* Contacts */
+    .contacts {
+      width: 25%;
+      padding: 10px;
+    }
+
+    .contact-list {
+      list-style: none;
+    }
+
+    .contact-list li {
+      padding: 8px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .contact-list li img {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+    }
+
+    .contact-list li:hover {
+      background-color: #e4e6eb;
+      border-radius: 8px;
+    }
+
+    /* Navbar */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: white;
+      padding: 10px 20px;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .navbar input {
+      padding: 8px;
+      border-radius: 20px;
+      border: 1px solid #ccc;
+      width: 250px;
+    }
+
+    .navbar-icons {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+    }
+
+    .icon-circle {
+      width: 32px;
+      height: 32px;
+      background-color: #e4e6eb;
+      border-radius: 50%;
+    }
+
+    .profile {
+      width: 32px;
+      height: 32px;
+      background-color: #3b5998;
+      border-radius: 50%;
+      color: white;
+      text-align: center;
+      line-height: 32px;
+      font-weight: bold;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="navbar">
+    <input type="text" placeholder="Search Facebook">
+    <div class="navbar-icons">
+      <div class="icon-circle"></div>
+      <div class="icon-circle"></div>
+      <div class="icon-circle"></div>
+      <div class="profile">H</div>
+    </div>
+  </div>
+
+  <div class="container">
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <ul>
+        <li>📖 Not-So-Secret Family Recipes</li>
+        <li>📕 Red Table Talk Group</li>
+        <li>📅 Events</li>
+        <li>💾 Saved</li>
+        <li>🎮 Gaming</li>
+        <li>💰 Fundraisers</li>
+        <li>🕓 Memories</li>
+        <li>🛠️ Help & Support</li>
+        <li>⚙️ Settings & Privacy</li>
+      </ul>
+    </div>
+
+    <!-- Feed -->
+    <div class="feed">
+      <!-- Stories com imagens -->
+      <div class="stories">
+        <div class="story" style="background-image: url('https://randomuser.me/api/portraits/women/1.jpg');"></div>
+        <div class="story" style="background-image: url('https://randomuser.me/api/portraits/men/2.jpg');"></div>
+        <div class="story" style="background-image: url('https://randomuser.me/api/portraits/women/3.jpg');"></div>
+        <div class="story" style="background-image: url('https://randomuser.me/api/portraits/men/4.jpg');"></div>
+        <div class="story" style="background-image: url('https://randomuser.me/api/portraits/women/5.jpg');"></div>
+      </div>
+
+      <div class="post-box">
+        <input type="text" placeholder="Add a post" style="width: 100%; padding: 10px; border-radius: 20px; border: 1px solid #ccc;">
+      </div>
+
+      <!-- Post com avatar -->
+      <div class="post">
+        <div class="post-header">
+          <img src="https://randomuser.me/api/portraits/men/10.jpg" alt="User Avatar">
+          <div>
+            <strong>Tom Russo</strong> <br>
+            <small>5 mins · 🌍</small>
+          </div>
+        </div>
+        <p>Not having fun at all 😜</p>
+        <img class="post-img" src="https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?fit=crop&w=800&q=80" alt="Post image">
+      </div>
+    </div>
+
+    <!-- Contacts com avatares -->
+    <div class="contacts">
+      <h4>Contacts</h4>
+      <ul class="contact-list">
+        <li><img src="https://randomuser.me/api/portraits/men/12.jpg" alt="Avatar"> Dennis Han</li>
+        <li><img src="https://randomuser.me/api/portraits/men/15.jpg" alt="Avatar"> Eric Jones</li>
+        <li><img src="https://randomuser.me/api/portraits/women/16.jpg" alt="Avatar"> Cynthia Lopez</li>
+        <li><img src="https://randomuser.me/api/portraits/women/17.jpg" alt="Avatar"> Anna Becklund</li>
+        <li><img src="https://randomuser.me/api/portraits/men/18.jpg" alt="Avatar"> Aiden Brown</li>
+        <li><img src="https://randomuser.me/api/portraits/women/19.jpg" alt="Avatar"> Betty Chen</li>
+        <li><img src="https://randomuser.me/api/portraits/men/20.jpg" alt="Avatar"> Dan Brown</li>
+        <li><img src="https://randomuser.me/api/portraits/men/21.jpg" alt="Avatar"> Henri Cook</li>
+      </ul>
+    </div>
+  </div>
+
+</body>
+</html>
